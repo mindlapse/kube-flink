@@ -2,6 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: flink-jobmanager
+  labels:
+    source: "https://github.com/mindlapse/kube-flink.git"
 spec:
   ports:
   - name: rpc
